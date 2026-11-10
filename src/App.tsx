@@ -11,7 +11,15 @@ import {
   FiPhone,
   FiX,
 } from "react-icons/fi";
-
+import coffeeShop1 from "./assets/coffeeshop1.png";
+import coffeeShop2 from "./assets/coffeeshop2.png";
+import coffeeShop3 from "./assets/coffeeshop3.png";
+import coffeeShop5 from "./assets/coffeeshop5.png";
+import coffeeShop7 from "./assets/coffeeshop7.png";
+import coffeeShop8 from "./assets/coffeeshop8.png";
+import gamehub1 from "./assets/gamehub1.jfif";
+import gamehub2 from "./assets/gamehub2.jfif";
+import gamehub3 from "./assets/gamehub3.jfif";
 import "./App.css";
 
 // ==========================================
@@ -74,12 +82,12 @@ const projects = [
     liveDemo: "https://coffee-shop-seven-flame.vercel.app/",
 
     images: [
-      "../src/assets/coffeeshop1.png",
-      "../src/assets/coffeeshop2.png",
-      "../src/assets/coffeeshop3.png",
-      "../src/assets/coffeeshop5.png",
-      "../src/assets/coffeeshop7.png",
-      "../src/assets/coffeeshop8.png",
+      coffeeShop1,
+      coffeeShop2,
+      coffeeShop3,
+      coffeeShop5,
+      coffeeShop7,
+      coffeeShop8,
     ],
 
     description:
@@ -100,11 +108,7 @@ const projects = [
     title: "GameHub",
     liveDemo: "https://game-hub-one-gray.vercel.app/",
 
-    images: [
-      "../src/assets/gamehub1.jfif",
-      "../src/assets/gamehub2.jfif",
-      "../src/assets/gamehub3.jfif",
-    ],
+    images: [gamehub1, gamehub2, gamehub3],
 
     description:
       "A responsive gaming discovery platform that allows users to explore video games, search for their favorite titles, and view detailed game information, ratings, and platforms using the RAWG API.",
