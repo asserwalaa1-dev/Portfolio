@@ -1,0 +1,234 @@
+/* Component-specific styles for the portfolio */
+.portfolio {
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.portfolio section {
+  scroll-margin-top: 80px;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+.accent {
+  color: var(--purple) !important;
+}
+
+.gradient-text {
+  color: transparent;
+  background: linear-gradient(100deg, #c2aaff, var(--blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.portfolio .navbar {
+  background: rgba(5, 6, 10, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.portfolio .navbar-brand {
+  color: var(--text) !important;
+}
+
+.portfolio .nav-link {
+  color: #b4b8c8 !important;
+  transition: color 0.2s ease;
+}
+
+.portfolio .nav-link:hover,
+.portfolio .nav-link:focus {
+  color: var(--purple) !important;
+}
+
+.portfolio .navbar-toggler {
+  color: var(--text);
+  border-color: var(--border) !important;
+}
+
+.portfolio .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(167, 139, 250, 0.3);
+}
+
+.portfolio .btn-primary,
+.portfolio .custom-btn {
+  border: 0 !important;
+  color: #080811 !important;
+  background: linear-gradient(110deg, #b9a2ff, #85b5ff) !important;
+  font-weight: 600;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.portfolio .btn-primary:hover,
+.portfolio .custom-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.portfolio .btn-outline-light {
+  color: var(--text) !important;
+  border-color: #303448 !important;
+  background: transparent !important;
+}
+
+.portfolio .btn-outline-light:hover {
+  color: white !important;
+  border-color: var(--purple) !important;
+  background: #121321 !important;
+}
+
+.portfolio .badge.border {
+  border-color: #37304f !important;
+  background: #0d0b16;
+}
+
+.code-panel,
+.custom-card,
+.contact-panel {
+  border: 1px solid var(--border) !important;
+  background: var(--card) !important;
+}
+
+.code-panel {
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.42);
+}
+
+.code-text {
+  overflow-x: auto;
+  color: #d5d8e7;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 2;
+  white-space: pre;
+}
+
+.code-purple {
+  color: #c5a0ff;
+}
+
+.code-green {
+  color: #a3e3b5;
+}
+
+.code-orange {
+  color: #ffbd87;
+}
+
+.custom-card {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-3px);
+  border-color: #494064 !important;
+}
+
+.experience-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #37304f;
+  border-radius: 12px;
+  color: var(--purple);
+  background: #11131d;
+  font-size: 20px;
+}
+
+.project-banner {
+  min-height: 190px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(124, 104, 222, 0.14),
+      transparent 55%
+    ),
+    #0c0e16 !important;
+}
+
+.project-icon {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: var(--purple);
+  font-size: 35px;
+}
+
+.technology-badge {
+  padding: 8px 10px;
+  color: #c9cce0 !important;
+  border: 1px solid var(--border);
+  background: #11131d !important;
+  font-weight: 500;
+}
+
+.social-link,
+.project-link {
+  color: var(--purple);
+  transition: color 0.2s ease;
+}
+
+.social-link:hover,
+.project-link:hover {
+  color: var(--blue);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-panel {
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(124, 104, 222, 0.1),
+      transparent 65%
+    ),
+    var(--card) !important;
+}
+
+.section-heading {
+  max-width: 760px;
+}
+
+.portfolio footer .navbar-brand {
+  color: var(--text) !important;
+}
+
+@media (max-width: 767.98px) {
+  .portfolio .display-3 {
+    font-size: clamp(2.5rem, 9vw, 3.5rem);
+  }
+
+  .code-text {
+    font-size: 11px;
+  }
+
+  .portfolio .navbar-collapse {
+    padding-top: 0.75rem;
+    background: transparent;
+  }
+
+  .portfolio .navbar-nav {
+    align-items: flex-start !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio *,
+  .portfolio *::before,
+  .portfolio *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
